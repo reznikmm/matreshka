@@ -9,9 +9,9 @@ jobs:
     runs-on: ubuntu-latest
     name: Build and deploy RPM
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           path: matreshka
-      - uses: reznikmm/fedora-ada-action@master
+      - uses: reznikmm/fedora-ada-action@v36
         with:
-          spec: matreshka/packages/travis/matreshka.spec
+          spec: matreshka/packages/copr/matreshka.spec
